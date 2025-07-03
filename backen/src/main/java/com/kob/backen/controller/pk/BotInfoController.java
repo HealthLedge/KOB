@@ -12,16 +12,10 @@ import java.util.Map;
 @RequestMapping("/pk/")
 public class BotInfoController {
     @RequestMapping("getbotinfo/")
-    public List<Map<String, String>> getBotInfo() {
-        List<Map<String, String>> list = new LinkedList<>();
-        Map<String, String> a = new HashMap<>();
-        a.put("caonima", "shabi");
-        a.put("nimabi", "dashabi");
+    public Map<String, String> getBotInfo() {
         Map<String, String> b = new HashMap<>();
         b.put("shabilaji", "bi");
         b.put("nima", "legebi");
-        list.add(a);
-        list.add(b);
-        return list;
+        return b;
     }
 }
