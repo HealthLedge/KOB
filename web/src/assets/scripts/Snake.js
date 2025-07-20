@@ -104,7 +104,7 @@ export class Snake extends AcGameObject {
         if (this.status === 'move') {
             this.update_move();
         }
-        // this.update_move();
+
         this.render();
     }
 

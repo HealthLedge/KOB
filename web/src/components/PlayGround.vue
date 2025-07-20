@@ -1,23 +1,23 @@
 <template>
-  <div class="playground">
-    <GameMap />
-  </div>
+    <div class="playground">
+        <GameMap />
+    </div>
 </template>
 
 <script>
-import GameMap from './GameMap.vue';
+import GameMap from './GameMap.vue'
+
 export default {
-  components: {
-    GameMap
-  },
-};
+    components: {
+        GameMap,
+    }
+}
 </script>
 
-<style>
+<style scoped>
 div.playground {
     width: 60vw;
     height: 70vh;
-    margin-left: 300px;
-    margin-top: 50px;
+    margin: 40px auto;
 }
 </style>
