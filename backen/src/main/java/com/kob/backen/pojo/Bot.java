@@ -7,13 +7,21 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Bot {
     @TableId(type = IdType.AUTO)
     private Integer id;
-    private String username;
-    private String password;
-    private String photo;
+    private Integer userId;
+    private String title;
+    private String description;
+    private String content;
+    private Integer rating;
+    @JsonFormat(pattern = "yyy-MM-dd HH:mm:ss")
+    private Date createtime;
+    @JsonFormat(pattern = "yyy-MM-dd HH:mm:ss")
+    private Date modifytime;
 }

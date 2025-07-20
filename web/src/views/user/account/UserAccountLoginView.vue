@@ -9,7 +9,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">密码</label>
-                    <input v-model="password" type="text" class="form-control" id="password" placeholder="请输入密码">
+                    <input v-model="password" type="password" class="form-control" id="password" placeholder="请输入密码">
                 </div>
                 <div class="error_message">{{ error_message }}</div>
                 <button type="submit" class="btn btn-primary">提交</button>
